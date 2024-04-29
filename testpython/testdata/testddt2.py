@@ -1,12 +1,14 @@
 # import logging
-
+import sys
+import os
 import pytest
 from ddt import ddt,data,unpack
 import jsonpath
-from testpython.data.openxl import ReadExcel
+from openxl import ReadExcel
 from testpython.logs.logdata import Mylogger
 from testpython.common.request1 import Sendsessionrequest
-from testpython.data.datarequest import login_check
+from datarequest import login_check
+
 
 
 
@@ -61,6 +63,11 @@ class TestDdt:
             print("预期结果：{}".format(expected))
             print("实际结果：{}".format(result))
 
+#
+# if __name__ == '__main__':
+#     # pytest.main(["r'--alluredir=data/allure'"])
+#     # pytest.main(['-s', 'test_ddt2.py', '–alluredir', './ result'])
 
 if __name__ == '__main__':
-    pytest.main(["--html=report.html"])
+    pytest.main(['testddt2.py', '-s', '-q', '--alluredir', './result'])
+    # os.system('allure generate ./result -o ./report --clean')
