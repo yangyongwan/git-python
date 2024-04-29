@@ -1,0 +1,3 @@
+2024-04-28 11:06:42,435 - [logdata.py-->line30 - INFO:你好info]
+2024-04-28 11:06:42,436 - [logdata.py-->line32 - ERROR:你好]
+2024-04-28 11:06:42,436 - [logdata.py-->line33 - CRITICAL:好的]

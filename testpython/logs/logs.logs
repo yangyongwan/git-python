@@ -1,0 +1,16 @@
+这是info等级
+这是WAENING等级
+这是ERROR等级
+这是CRITICAL等级
+这是info等级
+这是WAENING等级
+这是ERROR等级
+这是CRITICAL等级
+这是info等级
+这是WAENING等级
+这是ERROR等级
+这是CRITICAL等级
+2024-04-18 17:03:02,941 - [logdata.py-->line:28] - INFO: 这是info等级
+2024-04-18 17:03:02,941 - [logdata.py-->line:29] - WARNING: 这是WAENING等级
+2024-04-18 17:03:02,941 - [logdata.py-->line:30] - ERROR: 这是ERROR等级
+2024-04-18 17:03:02,941 - [logdata.py-->line:31] - CRITICAL: 这是CRITICAL等级
