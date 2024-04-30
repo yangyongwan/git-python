@@ -8,7 +8,7 @@ from openxl import ReadExcel
 from testpython.logs.logdata import Mylogger
 from testpython.common.request1 import Sendsessionrequest
 from datarequest import login_check
-
+import allure
 
 
 
@@ -48,7 +48,7 @@ class TestDdt:
         response = http.send_requests(url=url1,json=result_json,method='post',header=header)
         http.send_requests(url=url2,method='get')
         result = response.json()
-
+        # @allure.title('这是测试用例')
         try:
             assert expected['code'] == jsonpath.jsonpath(result,'$..code')[0]
             assert expected['msg'] == jsonpath.jsonpath(result,'$..msg')[0]

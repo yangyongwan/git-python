@@ -3,7 +3,7 @@ import pytest
 from testpython.drivers import testdriver
 
 
-from testpython.data.openxl import ReadExcel
+from testpython.testdata.openxl import ReadExcel
 
 from testpython.logs.logdata import Mylogger
 #
@@ -28,7 +28,7 @@ try:
     # print(data)
 except Exception as msg:
     my_log.error('数值输入不正确')
-    print(data)
+    # print(data)
 
 else:
     my_log.info('可以输出')
